@@ -12,16 +12,16 @@ const categoryModel = new mongoose.Schema(
          type: String,
          required: [true, "siz description kiritishingiz shart"],
       },
-      addedBy: {
-         type: mongoose.Types.ObjectId,
-         ref: "users",
-         required: true,
-      },
-      updatedBy: {
-         type: mongoose.Types.ObjectId,
-         ref: "users",
-         required: true,
-      },
+      // addedBy: {
+      //    type: mongoose.Types.ObjectId,
+      //    ref: "users",
+      //    required: true,
+      // },
+      // updatedBy: {
+      //    type: mongoose.Types.ObjectId,
+      //    ref: "users",
+      //    required: true,
+      // },
       discontinued: { Boolean, default: false },
    },
    { timestamps: true }
