@@ -6,5 +6,10 @@ router
    .route("/categories")
    .post(CategoryController.AddCategory)
    .get(CategoryController.getCategory);
+router
+   .route("/categories/:id")
+   .patch(CategoryController.UpdateCategory)
+   .delete(CategoryController.DeleteCategory)
+   .get(CategoryController.getCategoryById);
 
 module.exports = router;
